@@ -1,0 +1,38 @@
+[
+  {
+    "username": "andika0x10",
+    "name": "Andika Dinata",
+    "avatar": "/images/members/andika0x10.jpg",
+    "github": "https://github.com/andika0x10"
+  },
+  {
+    "username": "aqilfadhil1225",
+    "name": "Aqil Fadhil Murbantresna",
+    "avatar": "/images/members/aqilfadhil1225.jpg",
+    "github": "https://github.com/aqilfadhil1225"
+  },
+  {
+    "username": "AzizPrayoga1",
+    "name": "AzizPrayoga1",
+    "avatar": "/images/members/AzizPrayoga1.jpg",
+    "github": "https://github.com/AzizPrayoga1"
+  },
+  {
+    "username": "dzkwanakbr",
+    "name": "dzakwan akbar perdana wijaya",
+    "avatar": "/images/members/dzkwanakbr.jpg",
+    "github": "https://github.com/dzkwanakbr"
+  },
+  {
+    "username": "mhmddefrizal",
+    "name": "Muhammad Defrizal",
+    "avatar": "/images/members/mhmddefrizal.jpg",
+    "github": "https://github.com/mhmddefrizal"
+  },
+  {
+    "username": "NaufaldiFavianArchi",
+    "name": "Naufaldi Favian Archi",
+    "avatar": "/images/members/NaufaldiFavianArchi.png",
+    "github": "https://github.com/NaufaldiFavianArchi"
+  }
+]
