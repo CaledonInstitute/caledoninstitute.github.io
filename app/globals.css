@@ -382,6 +382,12 @@ img {
 .footer-end {
   text-align: right;
 }
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 12px 24px;
+}
 .footer-end a {
   display: inline-flex;
   align-items: center;
@@ -868,6 +874,9 @@ img {
   }
   .footer-end {
     text-align: left;
+  }
+  .footer-links {
+    justify-content: flex-start;
   }
   .members-grid {
     grid-template-columns: 1fr;

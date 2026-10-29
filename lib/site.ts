@@ -3,6 +3,7 @@ import { dictionaries, pageUrl, type Locale, type Page } from "./content";
 
 export const siteOrigin = "https://caledoninstitute.github.io";
 export const githubUrl = "https://github.com/CaledonInstitute";
+export const forumUrl = "https://caledon-forum.supervoid.workers.dev/";
 
 export function pageMetadata(locale: Locale, page: Page): Metadata {
   const { title, description } = dictionaries[locale].meta[page];

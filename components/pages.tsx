@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { dictionaries, pageUrl, type Locale } from "@/lib/content";
 import { members } from "@/lib/members";
-import { ExternalIcon, GitHubLink, NextStep, SiteShell } from "./site-shell";
+import { ExternalIcon, ForumLink, NextStep, SiteShell } from "./site-shell";
 
 function FieldMark({ type }: { type: "security" | "ai" }) {
   return (
@@ -89,7 +89,7 @@ export function HomePage({ locale }: { locale: Locale }) {
           <h1>{t.home.title}</h1>
           <p>{t.home.intro}</p>
           <div className="hero-actions">
-            <GitHubLink locale={locale} />
+            <ForumLink locale={locale} />
             <Link className="text-link" href={pageUrl(locale, "about")}>
               {t.aboutLink}
             </Link>

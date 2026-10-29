@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { dictionaries, pageUrl, type Locale, type Page } from "@/lib/content";
-import { githubUrl } from "@/lib/site";
+import { forumUrl, githubUrl } from "@/lib/site";
 
 export function ExternalIcon({ className }: { className?: string }) {
   return (
@@ -102,6 +102,7 @@ export function SiteShell({
         </Link>
         <nav className="desktop-nav" aria-label={t.navigation}>
           {links}
+          <a href={forumUrl}>{t.forum}</a>
         </nav>
         <div className="header-end">
           {languageSwitch}
@@ -112,7 +113,10 @@ export function SiteShell({
             {t.menu}
             <span aria-hidden="true">+</span>
           </summary>
-          <nav aria-label={t.navigation}>{links}</nav>
+          <nav aria-label={t.navigation}>
+            {links}
+            <a href={forumUrl}>{t.forum}</a>
+          </nav>
         </details>
       </header>
       <main id="main" tabIndex={-1}>
@@ -126,9 +130,14 @@ export function SiteShell({
           <p>{t.footer}</p>
         </div>
         <div className="footer-end">
-          <a href={githubUrl}>
-            GitHub <ExternalIcon />
-          </a>
+          <div className="footer-links">
+            <a href={forumUrl}>
+              {t.forum} <ExternalIcon />
+            </a>
+            <a href={githubUrl}>
+              GitHub <ExternalIcon />
+            </a>
+          </div>
           <p>{t.location}</p>
         </div>
       </footer>
@@ -136,10 +145,10 @@ export function SiteShell({
   );
 }
 
-export function GitHubLink({ locale }: { locale: Locale }) {
+export function ForumLink({ locale }: { locale: Locale }) {
   return (
-    <a className="button" href={githubUrl}>
-      {dictionaries[locale].github}
+    <a className="button" href={forumUrl}>
+      {dictionaries[locale].forumCta}
       <ExternalIcon />
     </a>
   );
@@ -160,7 +169,7 @@ export function NextStep({
         <h2>{title}</h2>
         <p>{body}</p>
       </div>
-      <GitHubLink locale={locale} />
+      <ForumLink locale={locale} />
     </section>
   );
 }
